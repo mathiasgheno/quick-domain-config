@@ -6,6 +6,12 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+jq . router.json
+if [ $? -ne 0 ]; then
+  echo "File router.json has sintax error"
+  exit 1
+fi
+
 echo "Making all scripts executable"
 
 find ./ -type f -name "*.sh" -exec chmod +x {} \;
