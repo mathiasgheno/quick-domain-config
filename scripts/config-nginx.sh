@@ -2,7 +2,7 @@
 
 # Verify if there is already an uncommented line `/configs/*.conf` in the file `/etc/nginx/nginx.conf` inside `http` config
 # if not, the script adds one
-if [ $? grep -q "^[^#]*\\s*/configs/.*\\.conf" -eq 1 ]; then
+if ! grep -q "^[^#]*\\s*/configs/.*\\.conf" /etc/nginx/nginx.conf; then
 
   echo "Configuring the 'include /configs/*.conf;' at /etc/nginx/nginx.conf"
 
