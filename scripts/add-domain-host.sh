@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 # Verifica se o argumento foi fornecido
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <domain_name>"
