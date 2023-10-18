@@ -33,3 +33,9 @@ sudo apt install jq && sudo install nginx
 ```shell
 chmod +x ./scripts/init.sh && cd ./scripts && ./init.sh
 ```
+
+### Use Cases
+
+- Direct access to YouTube and Spotify Playlists
+- Direct access to Notion Page
+- Direct access to any query params search URL like google
